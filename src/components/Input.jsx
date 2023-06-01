@@ -58,7 +58,7 @@ const Input = () => {
           Shorten it!
         </button>
       </div>
-      <div className="ml-12 mt-8 flex flex-col items-center justify-center w-4/6 h-full bg-[#30C59B] rounded-2xl text-white">
+      <div className="ml-12 mt-8 p-10 gap-4 flex flex-col items-center justify-center w-4/6 h-full bg-[#30C59B] rounded-2xl text-white">
         {inputValue}
         <ul className="flex flex-col items-center text-center">
           {error && <li className="text-red-500">{error}</li>}
@@ -66,7 +66,7 @@ const Input = () => {
             <li key={index}>
               {value}
               <button
-                className={`rounded-xl text-black w-3/4 h-10 ${copiedIndex === index ? 'bg-[white]' : 'bg-[#3b3054]'}`}
+                className={`rounded-xl text-black w-3/4 h-10 mt-4 ${copiedIndex === index ? 'bg-[white]' : 'bg-[#3b3054]'}`}
                 onClick={() => handleCopyClick(index)}
               >
                 {copiedIndex === index ? 'Copied' : 'Copy URL'}

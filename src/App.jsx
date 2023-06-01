@@ -2,6 +2,8 @@ import { Navbar } from './components/Navbar'
 import './App.css'
 import Input from './components/Input'
 import { useEffect, useState } from 'react'
+import Statistics from './components/Statistics';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -36,9 +38,9 @@ function App() {
   return (
     <>
    <Navbar />
-   <Input
-   convertUrl={convertedUrl} 
-   />
+   <Input/>
+   <Statistics />
+   <Footer />
  
     </>
   )
