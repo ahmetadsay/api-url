@@ -6,12 +6,12 @@ import logo4 from '/Users/ahmet/Downloads/url-shortening-api-master/react/src/as
 
 const Footer = () => {
   return (
-    <div className='bg-gray-800 text-white h-screen'>
-        <h1 className='text-3xl font-bold '>Shortly</h1>
-        <div className='flex flex-col justify-center items-center '>
-        <div className='flex flex-col '>
+    <div className='sm:flex bg-gray-800 text-white h-full'>
+        <div className=' sm:flex flex flex-col justify-center items-center '>
+        <h1 className='text-3xl font-bold mt-5 '>Shortly</h1>
+        <div className='sm:flex flex flex-col '>
             <h1 className=' mt-8'>Features</h1>
-            <div className='flex flex-col gap-4  opacity-50 mt-6' >
+            <div className=' sm:flex flex flex-col gap-4  opacity-50 mt-6' >
             <p >Link Shortening</p>
             <p>Branded Links</p>
             <p> Analytics</p>
@@ -37,7 +37,7 @@ const Footer = () => {
       
        
         </div>
-        <div className='flex mt-12 gap-6 justify-center '>
+        <div className=' sm:flex flex mt-12 gap-6 justify-center '>
             <img src={logo1} />
             <img src={logo2} />
             <img src={logo3} />

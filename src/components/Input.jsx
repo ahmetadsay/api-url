@@ -43,7 +43,8 @@ const Input = () => {
 
   return (
     <>
-      <div className="bg-[#3b3054] h-36 rounded-2xl mt-20 flex flex-col w-4/4 gap-4">
+      <div className=" bg-[#3b3054] h-36 rounded-2xl mt-20 flex flex-col w-4/4 ">
+        <div className='sm:flex items-center justify-center'>
         <input
           type="text"
           placeholder="Shorten a link here..."
@@ -52,13 +53,14 @@ const Input = () => {
           onChange={(e) => setInputValue(e.target.value)}
         />
         <button
-          className="ml-12 rounded-xl text-white w-3/4 bg-[#2acfcf] h-10"
+          className="ml-12 mt-4 rounded-xl text-white w-3/4 bg-[#2acfcf] h-10"
           onClick={handleSaveClick}
         >
           Shorten it!
         </button>
+        </div>
       </div>
-      <div className="ml-12 mt-8 p-10 gap-4 flex flex-col items-center justify-center w-4/6 h-full bg-[#30C59B] rounded-2xl text-white">
+      <div className="  ml-12 mt-8 p-10 gap-4 flex flex-col items-center justify-center w-4/6 h-full bg-[#30C59B] rounded-2xl text-white">
         {inputValue}
         <ul className="flex flex-col items-center text-center">
           {error && <li className="text-red-500">{error}</li>}
